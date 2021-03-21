@@ -290,13 +290,13 @@
                 </p>
                 <div class="save_linkedin">
                     <div class="linkedin_button"><a class="linkedin" href="https://www.linkedin.com/in/urviraghbeer" target="_blank">Linkedin</a></div>
-                    <!-- <div class="save_button"><span class="save_canvas">Hit "S" to save</span></div> -->
+                    <div style="margin-right: -200px;" class="only-lg-screen save_button"><span class="save_canvas linkedin">Hit "S" to save</span></div>
                 </div>
             </div>
 
-            <div class="save-container only-lg-screen">
+            <!-- <div class="save-container only-lg-screen d-none">
                 <div class="linkedin_button"><span class="save_canvas  linkedin">Hit "S" to save</span></div>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -426,9 +426,9 @@
                 }
             }
 
-            paintCanvas.addEventListener('mousedown', startDrawing);
+            // paintCanvas.addEventListener('mousedown', startDrawing);
+            // paintCanvas.addEventListener('mouseup', stopDrawing);
             paintCanvas.addEventListener('mousemove', drawLine);
-            paintCanvas.addEventListener('mouseup', stopDrawing);
             paintCanvas.addEventListener('mouseout', stopDrawing);
 
             paintCanvas.addEventListener('mouseover', startDrawing);
