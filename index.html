@@ -422,8 +422,8 @@
             paintCanvas.addEventListener('mouseup', stopDrawing);
             paintCanvas.addEventListener('mouseout', stopDrawing);
 
-            paintCanvas.addEventListener('mouseover', function(){console.log('hover')});
-            paintCanvas.addEventListener('mouseleave', function(){console.log('leave')});
+            paintCanvas.addEventListener('mouseover', startDrawing);
+            paintCanvas.addEventListener('mouseleave', stopDrawing);
 
             paintCanvas.addEventListener('touchstart', startTouchDrawing);
             paintCanvas.addEventListener('touchmove', drawTouchLine);
