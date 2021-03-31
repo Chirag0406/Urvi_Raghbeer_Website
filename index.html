@@ -66,7 +66,7 @@
             display: flex;
             /*justify-content: center;*/
             pointer-events: none;
-            padding: 5vmin 22vmin;
+            padding: 5vmin 15vmin;
             box-sizing: border-box;
         }
 
@@ -273,14 +273,18 @@
                 </div> -->
                 <!-- <h2 class="card_name">Urvi Raghbeer <span><img class="name-hyphen" src="substract.svg" width="40px"></span></h2> -->
                 <p class="card_desc_desktop only-desktop">
-                    Urvi Raghbeer    <span><img class="name-hyphen" src="substract.svg" width="35px"></span> <br> <br>
+                    Urvi Raghbeer—    
+                    <!-- <span><img class="name-hyphen" src="substract.svg" width="35px"></span>  -->
+                    <br> <br>
                     Entrepreneur. <br>
                     Graphic & UIUX designer. <br>
                     Living in the user's shoes.<br>
                     Founder & CEO at <a class="welly" href="https://welly.in/" target="_blank">Welly</a>. <br>
                 </p>
                 <p class="card_desc_mobile only-mobile">
-                    Urvi Raghbeer <span><img class="name-hyphen" src="substract.svg" width="25px"></span>  <br> <br>
+                    Urvi Raghbeer—
+                    <!-- <span><img class="name-hyphen" src="substract.svg" width="25px"></span>   -->
+                    <br> <br>
                     Entrepreneur. <br>
                     Graphic & <br> 
                     UIUX designer. <br>
@@ -290,7 +294,7 @@
                 </p>
                 <div class="save_linkedin">
                     <div class="linkedin_button"><a class="linkedin" href="https://www.linkedin.com/in/urviraghbeer" target="_blank">Linkedin</a></div>
-                    <div style="margin-right: -200px;" class="only-lg-screen save_button"><span class="save_canvas linkedin">Hit "S" to save</span></div>
+                    <div style="margin-left: calc(100vw - 70vmin);" class="only-lg-screen save_button"><span class="save_canvas linkedin">Hit "S" to save</span></div>
                 </div>
             </div>
 
@@ -316,7 +320,11 @@
             paintCanvas.height = window.innerHeight;
             const context = paintCanvas.getContext('2d');
             context.lineCap = 'round';
-            context.lineWidth = 100;
+            
+            if(screen.width > 800 )
+                context.lineWidth = 200;
+            else context.lineWidth = 100;
+
             context.fillStyle = "#ffffff";
             context.fillRect(0, 0, paintCanvas.width, paintCanvas.height);
             context.strokeStyle = "#ffec01";
