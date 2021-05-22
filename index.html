@@ -112,11 +112,14 @@
             }
         }
 
-        @media (max-width: 450px) {
+        @media (max-width: 500px) {
             .text-container {
-                padding: 5vmin 8vmin;
+                padding: 0vmin 8vmin;
             }
 
+            .text-container_inner{
+                justify-content: space-evenly !important;
+            }
             .only-desktop{
                 display: none;
             }
@@ -134,17 +137,17 @@
                 top: 5px;
             }
 
-            .linkedin {
+            /* .linkedin {
                 font-size: 10px !important;
-            }
+            } */
 
             .save_button {
                 display: none;
             }
 
             .welly{
-                font-size: 20px!important;
-                line-height: 28px !important;
+                font-size: 32px!important;
+                line-height: 40px !important;
             }
         }
 
@@ -172,9 +175,10 @@
         }
 
         .card_desc_mobile {
-            font-size: 20px;
-            margin: 10vmin 0 20vmin 0;
-            line-height: 28px;
+            font-size: 32px;
+            /* margin: 10vmin 0 20vmin 0; */
+            margin: 0px !important;
+            line-height: 40px;
             font-family: card_font;
             font-weight: bold;
         }
@@ -268,13 +272,8 @@
         <div class="text-container">
 
             <div class="text-container_inner">
-                <!-- <div class="save_refresh">
-                    <span class="reload_canvas">Hit "R" to refresh</span>
-                </div> -->
-                <!-- <h2 class="card_name">Urvi Raghbeer <span><img class="name-hyphen" src="substract.svg" width="40px"></span></h2> -->
                 <p class="card_desc_desktop only-desktop">
                     Urvi Raghbeer—    
-                    <!-- <span><img class="name-hyphen" src="substract.svg" width="35px"></span>  -->
                     <br> <br>
                     Entrepreneur. <br>
                     Graphic & UIUX designer. <br>
@@ -283,12 +282,12 @@
                 </p>
                 <p class="card_desc_mobile only-mobile">
                     Urvi Raghbeer—
-                    <!-- <span><img class="name-hyphen" src="substract.svg" width="25px"></span>   -->
                     <br> <br>
-                    Entrepreneur. <br>
-                    Graphic & <br> 
-                    UIUX designer. <br>
-                    Living in the user's shoes.<br>
+                    Entrepreneur.<br>
+                    Graphic &<br> 
+                    UIUX designer.<br>
+                    Living in the<br> 
+                    user's shoes.<br>
                     Founder & CEO<br>
                     at <a class="welly" href="https://welly.in/" target="_blank">Welly</a>. <br>
                 </p>
@@ -297,16 +296,10 @@
                     <div style="margin-left: calc(100vw - 70vmin);" class="only-lg-screen save_button"><span class="save_canvas linkedin">Hit "S" to save</span></div>
                 </div>
             </div>
-
-            <!-- <div class="save-container only-lg-screen d-none">
-                <div class="linkedin_button"><span class="save_canvas  linkedin">Hit "S" to save</span></div>
-            </div> -->
         </div>
     </div>
 
     <div id="image"></div>
-
-    <!-- <button id="download_canvas">download</button> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.6/processing.min.js"></script>
