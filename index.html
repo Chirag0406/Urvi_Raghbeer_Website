@@ -79,6 +79,16 @@
         width: 100%;
       }
 
+      .quote {
+        quotes: "\201c""\201d""\2018""\2019";
+      }
+      .quote::before {
+        content: open-quote;
+      }
+      .quote::after {
+        content: close-quote;
+      }
+
       .text-container {
         position: absolute;
         top: 0;
@@ -308,6 +318,7 @@
             <br />
             <br />
             <br />
+            <br />
             Entrepreneur.<br />
             Graphic &<br />
             UIUX designer.<br />
@@ -332,7 +343,9 @@
               style="margin-left: calc(100vw - 70vmin)"
               class="only-lg-screen save_button"
             >
-              <span class="save_canvas linkedin">Hit "S" to save</span>
+              <span class="save_canvas linkedin"
+                >Hit <span class="quote">S</span> to save</span
+              >
             </div>
           </div>
         </div>
